@@ -1,0 +1,75 @@
+
+body{
+    background-color: lightblue;
+}
+.about{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.about > *{
+    margin: 15px 0px;
+}
+.about .closebtn{
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: grey;
+    color:black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.generalInfo{
+    text-align:left;
+}
+.startbtn{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+form{
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+.startbtn button{
+    justify-content: center;
+    display: block;
+    margin: auto;
+    width:45%;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 3px grey;
+    background-color: rgb(244, 244, 244);
+}
+.startbtn button:hover{
+    background-color: rgb(224, 224, 224);
+}
+.startbtn button:active{
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 1px;
+    transform: translateY(4px);
+}
+.help{
+    background-color: rgb(136, 87, 139);
+    color: white;
+    position: absolute;
+    right: 5%;
+    top:5%;
+    border-radius: 50%;
+    font-size: 25px;
+}
