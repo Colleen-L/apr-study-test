@@ -6,36 +6,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Lockscreen</title>
+    <title>Log In Screen</title>
 </head>
 <body>
-    <!-- help button -->
-    <button class="help"> ? </button>
-    <!-- popup -->
-    <div class="about">
-        <div class="closebtn">&times;</div>
-        <h5 class="generalInfo">What is the Study About?</h5>
-        <h5 class="generalInfo">This study observes the extent of how high school adolescents' organization of a set of pictures correlates with their self-perceived personality traits.</h5>
-        <h3>For this portion of the study, you will be organizing a set of rectangular pictures.</h3>
-        <hr>
-        <ul>
-            <li>You may opt out of this study/test at anytime by pressing the QUIT button on the top.</li>
-            <li>Once you click start, you will have <b>25 seconds</b> to complete the task. There will be a timer on the top left corner.</li>
-            <p class="instructions"><i>1. Once you start the simulation, there will be 8 rectanglular boxes to select from at the bottom. There will also be a gallery display at the top to show your selection (from left to right).</i></p>
-            <p class="instructions"><i>2. You can hover to enlarge the rectangular boxes for a more clear image.</i></p>
-            <p class="instructions"><i>3. If you misclick, you can remove the selection by either clicking the restart button on the right OR clicking the x when hovering on the gallery view.</i></p>
-        </ul>
+    <div class="main">
+        <div class="content">
+            <button id="open-popup">INFO // HELP</button>
+
+            <!-- initials and school info -->
+            <div class="logIn">
+                <form class="form">
+ 
+                    <p>
+                        <label>Initials : <input type="initals" placeholder="initials (first, middle, last)" /></label>
+                    </p>
+             
+                    <p>
+                        <label>School : <input type="school" placeholder="name of school"/></label>
+                    </p>
+             
+                    <p>
+                        <button class="start"><a href="test.html">Start Simulation</a></button>
+                    </p>
+             
+                </form>
+            </div>
+        </div>
     </div>
-    <!-- start button -->
-    <div class="startbtn">
-        <!-- information -->
-        <form>
-            <label for="initials">Initials:</label>
-            <input type="text" id="initials" name="initials"><br>
-            <label for="school">School:</label>
-            <input type="text" id="school" name="initials">
-        </form>
-        <button>START SIMULATION</button>
+
+    <div class="popup">
+        <!-- instructions/help button -->
+        <div class="instructions">
+            <button class="closeButton">&times;</button>
+            <h5>What is this Study About?</h5>
+            <h5>This study observes the extent of how high school adolescents' organization of a set of pictures correlates with their self-perceived personality traits.</h5>
+            <h3>For this portion of the study, you will be organizing a set of rectangular pictures.</h3>
+            <hr>
+            <ul>
+                <li>You may opt out of this study/simulation at any time by pressing the QUIT button on the top.</li>
+                <li>Once you click start, you will have <b>25 seconds</b> to complete the task. There will be a timer on the top left corner.</li>
+                <p><i>1. Once you start the simulation, there will be 8 rectangular boxes to select from at the bottom. There will also be a gallery display at the top to show your selections (from left to right).</i></p>
+                <p><i>2. You can hover to enlarge the rectangular boxes for a more clear image.</i></p>
+                <p><i>3. If you misclick, you can remove the selection by either clicking the restart button on the right (which will restart the entire simulation) OR clicking the x when hovering on the gallery view.</i></p>
+            </ul>
+        </div>
     </div>
 
 

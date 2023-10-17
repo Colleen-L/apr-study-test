@@ -1,75 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-body{
-    background-color: lightblue;
+body {
+    font-family: "Roboto";
+    overflow: hidden;
 }
-.about{
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
+.main {
+    min-height: 100vh;
+    transition: filter 0ms ease-in-out 300ms;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.5);
-    text-align: center;
+    background: #7A8B99;
 }
-.about > *{
+.content > * {
+    margin: 10px 0px;
+}
+
+.logIn{
+    height: 95vh;
+}
+
+.form{
+    height: 90vh;
+    text-align: center;
+    padding-top: 33vh;
+    padding-bottom: 33vh;
+    padding-left: 33vw;
+    padding-right: 33vw;
+    border-radius: 15px;
+    background: #9BA0BC;
+}
+
+input{
+    background: #C1B8C8;
+}
+
+.start {
+    background: #C1B8C8;
+    box-shadow: 0 5px #999;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    width: 60%;
+    height: 10%;
+}
+.start:hover{
+    cursor: pointer;
+    background: #bfafcb;
+}
+.start:active{
+    background-color: #bfafcb;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#open-popup {
+    background: #C1B8C8;
+    font-size: 25px;
+    position: fixed;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    top: 50px;
+    right: 50px;
+}
+
+.popup {
+    position: fixed;
+    top:-100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:450px;
+    padding:20px;
+    background: #C1B8C8;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+    margin-top: -25px;
+    transition: top 0ms ease-in-out 300ms,
+                opacity 300ms ease-in-out,
+                margin-top 300ms ease-in-out;
+}
+
+.popup > * {
     margin: 15px 0px;
 }
-.about .closebtn{
-    position: absolute;
+
+.popup .closeButton {
+    position: fixed;
     top: -5px;
     right: 10px;
     width: 20px;
     height: 20px;
-    background: grey;
-    color:black;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.generalInfo{
-    text-align:left;
-}
-.startbtn{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-}
-form{
-    justify-content: center;
-    display: block;
-    margin: auto;
-}
-.startbtn button{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    width:45%;
-    font-size: 30px;
-    padding: 5px;
-    text-align: center;
+    background: #eee;
+    color: #111;
+    border: none;
     outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 3px grey;
-    background-color: rgb(244, 244, 244);
-}
-.startbtn button:hover{
-    background-color: rgb(224, 224, 224);
-}
-.startbtn button:active{
-    background-color: rgb(224, 224, 224);
-    box-shadow: 0 1px;
-    transform: translateY(4px);
-}
-.help{
-    background-color: rgb(136, 87, 139);
-    color: white;
-    position: absolute;
-    right: 5%;
-    top:5%;
     border-radius: 50%;
-    font-size: 25px;
+    cursor: pointer;
+}
+
+body.active-popup {
+    overflow: hidden;
+}
+
+body.active-popup .main {
+    filter: blur(5px);
+    background: rgba(0,0,0,0.08);
+    transition: filter 0ms ease-in-out 0ms;
+}
+
+body.active-popup .popup {
+    top:50%;
+    opacity: 1;
+    margin-top: 0px;
+    transition: top 0ms ease-in-out 0ms,
+                opacity 300ms ease-in-out,
+                margin-top 300ms ease-in-out;
+}
+
+a:link, a:hover, a:active{
+    color: black;
 }

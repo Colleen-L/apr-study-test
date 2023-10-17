@@ -1,12 +1,9 @@
-let x = document.querySelector(".closebtn");
-let about = document.querySelector(".about");
-let start = document.querySelector("button");
-let help = document.querySelector(".help");
+let openPopup = document.querySelector("#open-popup");
+let closePopup = document.querySelector(".popup .closeButton");
 
-x.onclick=function(){
-    about.style.display = "none";
-    start.style.display = "block";
-}
-help.onclick=function(){
-    about.style.display = "block";
-}
+openPopup.addEventListener("click", function(){
+    document.body.classList.add("active-popup");
+})
+closePopup.addEventListener("click", function(){
+    document.body.classList.remove("active-popup");
+})
