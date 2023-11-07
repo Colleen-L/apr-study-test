@@ -46,11 +46,11 @@ div.gallery {
     text-align:center;
   }
   td img{
-    width: 23vw;
+    width: 20vw;
     height: auto;
   }
   td img:hover{
-    width: 30vw;
+    width: 25vw;
     height: auto;
   }
 
