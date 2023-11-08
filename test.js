@@ -4,8 +4,17 @@ var timer = document.getElementById('timer');
 
 var timerId = setInterval(countdown, 1000);
 
+function screenshot(){
+    html2canvas(document.querySelector(".galleryView"), {
+        onrendered: function(canvas) {
+            return Canvas2Image.saveAsPNG(canvas);
+        }
+    })
+}
+
 function countdown() {
   if (timeLeft < 0) {
+    screenshot();
     clearTimeout(timerId);
     location.replace("final.html");
   } else {
@@ -39,7 +48,6 @@ var slide8spot = document.getElementById('slide8spot');
 
 slide1.addEventListener("click", function(){
     incrementCount();
-    while(slide1spot.src != "slides/slide1.png" && slide2spot.src != "slides/slide1.png" && slide3spot.src != "slides/slide1.png" && slide4spot.src != "slides/slide1.png" && slide5spot.src != "slides/slide1.png" && slide6spot.src != "slides/slide1.png" && slide7spot.src != "slides/slide1.png" && slide8spot.src != "slides/slide1.png" ){
         if(count == 1){
             slide1spot.src = "slides/slide1.png";
         } else if(count == 2){
@@ -57,26 +65,170 @@ slide1.addEventListener("click", function(){
         } else if(count == 8){
             slide8spot.src = "slides/slide1.png";
         }
-    }
 })
 slide2.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide2.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide2.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide2.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide2.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide2.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide2.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide2.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide2.png";
+        }
 })
 slide3.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide3.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide3.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide3.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide3.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide3.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide3.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide3.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide3.png";
+        }
 })
 slide4.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide4.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide4.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide4.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide4.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide4.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide4.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide4.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide4.png";
+        }
 })
 slide5.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide5.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide5.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide5.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide5.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide5.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide5.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide5.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide5.png";
+        }
 })
 slide6.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide6.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide6.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide6.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide6.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide6.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide6.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide6.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide6.png";
+        }
 })
 slide7.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide7.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide7.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide7.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide7.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide7.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide7.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide7.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide7.png";
+        }
 })
 slide8.addEventListener("click", function(){
     incrementCount();
+        if(count == 1){
+            slide1spot.src = "slides/slide8.png";
+        } else if(count == 2){
+            slide2spot.src = "slides/slide8.png";
+        } else if(count == 3){
+            slide3spot.src = "slides/slide8.png";
+        } else if(count == 4){
+            slide4spot.src = "slides/slide8.png";
+        } else if(count == 5){
+            slide5spot.src = "slides/slide8.png";
+        } else if(count == 6){
+            slide6spot.src = "slides/slide8.png";
+        } else if(count == 7){
+            slide7spot.src = "slides/slide8.png";
+        } else if(count == 8){
+            slide8spot.src = "slides/slide8.png";
+        }
+})
+
+//quitting
+var quit = document.getElementById('quit');
+quit.addEventListener("click", function(){
+    location.replace("final.html");
+})
+
+//finish
+var finish = document.getElementById('finish');
+finish.addEventListener("click", function(){
+    location.replace("final.html");
+})
+
+//restart
+var restart = document.getElementById('restart');
+restart.addEventListener("click", function(){
+    count = 0;
+    slide1spot.src = "slides/noselection.png";
+    slide2spot.src = "slides/noselection.png";
+    slide3spot.src = "slides/noselection.png";
+    slide4spot.src = "slides/noselection.png";
+    slide5spot.src = "slides/noselection.png";
+    slide6spot.src = "slides/noselection.png";
+    slide7spot.src = "slides/noselection.png";
+    slide8spot.src = "slides/noselection.png";
 })

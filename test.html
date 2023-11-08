@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +13,9 @@
 <body>
     <div class="header">
         <div id="timer"></div>
-        <button> PAUSE </button>
-        <button> QUIT // OPT OUT </button>
-        <button> FINISH </button>
-        <button> RESTART ALL SELECTIONS </button>
+        <button id="quit"> QUIT // OPT OUT </button>
+        <button id="finish"> FINISH </button>
+        <button id="restart"> RESTART ALL SELECTIONS </button>
     </div>
     <div class="galleryView">
         <div class="firstRow">
@@ -78,8 +79,8 @@
           <td><button><img src="slides/slide6.png" id="slide6" alt="slide6"></button></td>
         </tr>
     </table>
-</body>
 
+</body>
     <script src="test.js"></script>
 </body>
 </html>
