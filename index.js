@@ -8,12 +8,13 @@ closePopup.addEventListener("click", function(){
     document.body.classList.remove("active-popup");
 })
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwafaZup4LBny-MiHlWR1CqpkQzs1RM-5lOZofdvewUJ8slb4ShvE5B2m2jnt_yIDSv8w/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz0WPjEVHy5i5I2Q2Ynt1aZhngbaqceZoYNntoqSwUlaLIVCXGn7Psfg9TceNlBtnFWDg/exec'
 
 const form = document.forms['APR-Simulation']
 
 form.addEventListener('submit', e => {
   e.preventDefault()
+  document.querySelector("#submit").value="Submitting...";
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
   .then(() => {location.replace("test.html");})
 })

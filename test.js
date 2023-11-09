@@ -8,6 +8,7 @@ function screenshot(){
     html2canvas(document.querySelector(".galleryView"), {
         onrendered: function(canvas) {
             return Canvas2Image.saveAsPNG(canvas);
+
         }
     })
 }
@@ -16,7 +17,7 @@ function countdown() {
   if (timeLeft < 0) {
     screenshot();
     clearTimeout(timerId);
-    location.replace("final.html");
+    location.replace("upload.html");
   } else {
     timer.innerHTML = timeLeft;
     timeLeft--;
@@ -210,13 +211,15 @@ slide8.addEventListener("click", function(){
 //quitting
 var quit = document.getElementById('quit');
 quit.addEventListener("click", function(){
+    screenshot();
     location.replace("final.html");
 })
 
 //finish
 var finish = document.getElementById('finish');
 finish.addEventListener("click", function(){
-    location.replace("final.html");
+    screenshot();
+    location.replace("upload.html");
 })
 
 //restart
