@@ -1,3 +1,15 @@
+//prevent back btn
+window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
+
+        window.addEventListener('beforeunload', (event) => {
+            // Cancel the event as stated by the standard.
+            event.preventDefault();
+            // Chrome requires returnValue to be set.
+            event.returnValue = '';
+          });
 //timer
 var timeLeft = 25;
 var timer = document.getElementById('timer');

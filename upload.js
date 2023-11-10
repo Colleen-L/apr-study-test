@@ -1,3 +1,9 @@
+//prevent back btn
+window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
+
 let file = document.querySelector("input");
 let image = document.querySelector("img");
 let url="https://script.google.com/macros/s/AKfycbx0k-JorY3zjQO4T60vyaJ2C-WweK-J4sTO4z65v-5j60XXlj-VIydId-WcYS8X5hcD/exec";
@@ -23,4 +29,9 @@ file.addEventListener('change', () =>{
     })
     fileReader.readAsDataURL(file.files[0]);
 
+})
+
+var upload = document.getElementById('upload');
+upload.addEventListener("click", function(){
+    location.replace("final.html");
 })
