@@ -4,12 +4,6 @@ window.history.forward();
             window.history.forward(); 
         } 
 
-        window.addEventListener('beforeunload', (event) => {
-            // Cancel the event as stated by the standard.
-            event.preventDefault();
-            // Chrome requires returnValue to be set.
-            event.returnValue = '';
-          });
 //timer
 var timeLeft = 25;
 var timer = document.getElementById('timer');
@@ -29,7 +23,7 @@ function countdown() {
   if (timeLeft < 0) {
     screenshot();
     clearTimeout(timerId);
-    location.replace("upload.html");
+    window.location.replace("upload.html");
   } else {
     timer.innerHTML = timeLeft;
     timeLeft--;
@@ -223,15 +217,14 @@ slide8.addEventListener("click", function(){
 //quitting
 var quit = document.getElementById('quit');
 quit.addEventListener("click", function(){
-    screenshot();
-    location.replace("final.html");
+    window.location.replace("final.html");
 })
 
 //finish
 var finish = document.getElementById('finish');
 finish.addEventListener("click", function(){
     screenshot();
-    location.replace("upload.html");
+    window.location.replace("upload.html");
 })
 
 //restart

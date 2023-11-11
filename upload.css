@@ -1,0 +1,39 @@
+body{
+    background-color: #7A8B99;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+img{
+    width:100vw;
+}
+
+h3{
+    font-size: 20px;
+    background: #A0D2DB;
+}
+h1{
+    font-size: 25px;
+    background: #A0D2DB;
+}
+
+#upload{
+    background: #C1B8C8;
+    box-shadow: 0 5px #999;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    width: 70%;
+    height: 10%;
+}
+
+#upload:hover{
+    cursor: pointer;
+    background: #bfafcb;
+}
+#upload:active{
+    background-color: #bfafcb;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}

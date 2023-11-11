@@ -3,6 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.title{
+    width: 100vw;
+    text-align: center;
+    font-size: 23px;
+}
 
 body {
     font-family: "Roboto";
@@ -39,6 +44,7 @@ body {
 
 input{
     background: #C1B8C8;
+    margin: 15px;
 }
 
 #submit {

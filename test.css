@@ -1,5 +1,7 @@
 body{
     overflow: hidden;
+    background-color: #7D8CC4;
+    font-family: "Roboto";
 }
 
 .galleryView{
@@ -16,6 +18,7 @@ body{
 div.gallery {
     border: 1px solid black;
     justify-content: space-evenly;
+    border-radius: 5px;
   }
   
   div.gallery:hover {
@@ -26,6 +29,7 @@ div.gallery {
   div.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 3px;
   }
 
   .responsive{
@@ -48,10 +52,15 @@ div.gallery {
   td img{
     width: 20vw;
     height: auto;
+    border-radius: 3px;
   }
   td img:hover{
-    width: 25vw;
+    width: 22vw;
     height: auto;
+  }
+
+  button{
+    border-radius: 5px;
   }
 
   @media only screen and (min-width: 950px){
@@ -64,3 +73,87 @@ div.gallery {
         height: auto;
       }
   }
+
+  #timer{
+    font-size: 30px;
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #quit{
+    background: #C1B8C8;
+    box-shadow: 0 5px #999;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 25vw;
+    height: 7vh;
+    font-size:15px;
+  }
+
+#quit:hover{
+    cursor: pointer;
+    background: #bfafcb;
+}
+#quit:active{
+    background-color: #bfafcb;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+  #restart{
+    background: #C1B8C8;
+    box-shadow: 0 5px #999;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 25vw;
+    height: 7vh;
+    font-size: 15px;
+  }
+
+#restart:hover{
+    cursor: pointer;
+    background: #bfafcb;
+}
+#restart:active{
+    background-color: #bfafcb;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+  #finish{
+    background: #C1B8C8;
+    box-shadow: 0 5px #999;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 25vw;
+    height: 7vh;
+    font-size: 15px;
+  }
+
+#finish:hover{
+    cursor: pointer;
+    background: #bfafcb;
+}
+#finish:active{
+    background-color: #bfafcb;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+.btns{
+    display:flex;
+    width:100vw;
+    justify-content: space-around;
+}
+.select{
+    width:100vw;
+    font-size: 15px;
+    text-align:center;
+    background-color: #A0D2DB;
+}
