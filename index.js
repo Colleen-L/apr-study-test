@@ -1,3 +1,9 @@
+//prevent back btn
+window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
+
 let openPopup = document.querySelector("#open-popup");
 let closePopup = document.querySelector(".popup .closeButton");
 
