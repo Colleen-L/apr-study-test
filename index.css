@@ -5,7 +5,7 @@
 }
 .title{
     width: 100vw;
-    text-align: center;
+    text-align: left;
     font-size: 23px;
 }
 
@@ -67,15 +67,29 @@ input{
     transform: translateY(4px);
 }
 
+#open-popup:active{
+    background-color: rgb(200, 200, 200);
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#open-popup:hover{
+    cursor: pointer;
+    background: whitesmoke;
+}
+
 #open-popup {
-    background: #C1B8C8;
-    font-size: 25px;
+    background: rgb(234, 234, 234);
+    box-shadow: 0 5px #999;
+    border: none;
+    font-size: 20px;
     position: fixed;
     border-radius: 15px;
-    width: 200px;
-    height: 50px;
-    top: 50px;
-    right: 50px;
+    width: 30vw;
+    height: 60px;
+    top: 55px;
+    right: 35%;
+    font-weight: bold;
 }
 
 .popup {
