@@ -5,7 +5,7 @@ window.history.forward();
         } 
 
 //timer
-var timeLeft = 25;
+var timeLeft = 30;
 var timer = document.getElementById('timer');
 
 var timerId = setInterval(countdown, 1000);
